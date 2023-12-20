@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  manufacturer_id: 1
+  year_introduced: MyString
+  trims: MyString
+  img: MyString
+
+two:
+  name: MyString
+  manufacturer_id: 1
+  year_introduced: MyString
+  trims: MyString
+  img: MyString
