@@ -31,7 +31,7 @@ class ManufacturersController < ApplicationController
   end
 
   def delete
-    @manufacturer = Manufacturer.find_by(id params[:id])
+    @manufacturer = Manufacturer.find_by(id: params[:id])
     @manufacturer.destroy
     render json: { message: "Manufacturer removed." }
   end
