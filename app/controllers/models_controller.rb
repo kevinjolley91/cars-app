@@ -14,7 +14,7 @@ class ModelsController < ApplicationController
       name: params[:name],
       manufacturer_id: params[:manufacturer_id],
       year_introduced: params[:year_introduced],
-      trims: params[:trims],
+      body_styles: params[:body_styles],
       img: params[:img],
     )
     render :show
@@ -26,7 +26,7 @@ class ModelsController < ApplicationController
       name: params[:name] || @model.name,
       manufacturer_id: params[:manufacturer_id] || @model.manufacturer_id,
       year_introduced: params[:year_introduced] || @model.year_introduced,
-      trims: params[:trims] || @model.trims,
+      body_styles: params[:body_styles] || @model.body_styles,
       img: params[:img] || @model.img,
     )
     render :show
