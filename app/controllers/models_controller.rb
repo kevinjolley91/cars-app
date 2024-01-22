@@ -33,7 +33,7 @@ class ModelsController < ApplicationController
   end
 
   def delete
-    @model = Model.find_by(id params[:id])
+    @model = Model.find_by(id: params[:id])
     @model.destroy
     render json: { message: "Model removed." }
   end
